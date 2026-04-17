@@ -1,0 +1,25 @@
+:root{
+  --bg:#0f172a;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--ok:#10b981
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071024,#07102a);color:#e6eef8}
+.container{max-width:920px;margin:28px auto;padding:20px}
+header h1{margin:0;font-size:20px}
+.muted{color:var(--muted);font-size:13px}
+.dashboard{display:flex;gap:16px;align-items:center;margin-top:18px}
+.state-card{flex:0 0 260px;padding:14px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+.state-label{font-size:12px;color:var(--muted)}
+.state-value{font-weight:700;font-size:18px;margin-top:6px}
+.state-card.visible_focused{border-color:rgba(6,182,212,0.25);box-shadow:0 6px 20px rgba(6,182,212,0.04)}
+.state-card.visible_unfocused{border-color:rgba(234,179,8,0.2)}
+.state-card.hidden{border-color:rgba(255,255,255,0.04);opacity:0.8}
+.controls{flex:1;display:flex;flex-direction:column;gap:10px}
+button{background:var(--accent);color:#022;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+.timeline{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.event{display:flex;gap:12px;padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+.ev-time{width:84px;color:var(--muted);font-size:13px}
+.ev-details{color:var(--muted);font-size:13px}
+.ev-note{font-size:12px;color:var(--muted)}
+.ev-meta{font-size:12px;color:var(--muted);margin-top:6px}
+.summary{color:var(--muted);font-size:13px}
+.ethics{margin-top:18px;padding:12px;border-radius:8px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
